@@ -1,0 +1,53 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 28
+		externalNativeBuild {
+            cmake{
+                //生成多个版本的so库
+                abiFilters 'armeabi',  'armeabi-v7a','arm64-v8a','x86','x86_64','mips','mips64'
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        
+    }
+
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = []
+        }
+    }
+}
+
+
+publish{
+    userOrg = "yuanbinbin"
+    groupId = "com.github.binbinrd"
+    artifactId = "bsdiff"
+    publishVersion = "1.0.0"
+    repoName = "IBsdiff"
+    desc = 'An Extended Library of app incremental update'
+    website = 'https://github.com/novoda/bintray-release'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+
+}
