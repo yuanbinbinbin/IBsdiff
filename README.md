@@ -15,11 +15,11 @@ Test
 
 Screenshot
 --------
-<img src="https://github.com/yuanbinbinbin/IBsdiff/tree/master/ext/test/screenshot.jpg" alt="screenshot.jpg" />
+<img src="https://github.com/yuanbinbinbin/IBsdiff/blob/master/ext/test/screenshot.jpg" alt="screenshot.jpg" />
 
 Create patch file
 --------
-Windows
+**Windows**
 
 1. [Download](https://github.com/yuanbinbinbin/IBsdiff/tree/master/ext/util/bsdiff-v4.3-win-x64.zip)
 2. unzip it
@@ -32,7 +32,7 @@ Windows
 9. wait
 10. a new file called patch will be created
   
-mac
+**mac**
 1. [Download](https://github.com/yuanbinbinbin/IBsdiff/tree/master/ext/util/bsdiff-4.3-mac.tar.gz)
 2. unzip it
 3. your old apk name old.apk 
