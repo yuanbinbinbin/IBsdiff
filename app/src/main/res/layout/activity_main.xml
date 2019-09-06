@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:padding="10dp"
-        android:text="我是内容 "
+        android:text="我是新版本 "
         android:textSize="15sp" />
 
     <TextView

@@ -43,7 +43,7 @@ publish{
     publishVersion = "1.0.0"
     repoName = "IBsdiff"
     desc = 'An Extended Library of app incremental update'
-    website = 'https://github.com/novoda/bintray-release'
+    website = 'https://github.com/yuanbinbinbin/IBsdiff'
 }
 
 dependencies {

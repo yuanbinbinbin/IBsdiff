@@ -68,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
     //region 选择patch
     public void selectPatch(View view) {
         Intent intent = new Intent(Intent.ACTION_PICK);
+        intent.setType("*/*");
         startActivityForResult(intent, REQUEST_CODE_PATCH);
     }
 
